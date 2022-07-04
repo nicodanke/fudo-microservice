@@ -1,0 +1,22 @@
+server:
+  port: 8091
+  error:
+    include-message: always
+spring:
+  application:
+    name: service-product
+  datasource:
+    url: jdbc:postgresql://localhost:5432/products
+    username: nddev
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
