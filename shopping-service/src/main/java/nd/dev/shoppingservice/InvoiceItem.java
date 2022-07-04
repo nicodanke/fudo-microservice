@@ -1,6 +1,8 @@
 package nd.dev.shoppingservice;
 
 import lombok.Data;
+import nd.dev.shoppingservice.model.Customer;
+import nd.dev.shoppingservice.model.Product;
 
 import javax.persistence.*;
 import javax.validation.constraints.Positive;
@@ -23,6 +25,9 @@ public class InvoiceItem  {
 
     @Transient
     private Double subTotal;
+
+    @Transient
+    private Product product;
 
     public Double getSubTotal(){
         if (this.price >0  && this.quantity >0 ){
