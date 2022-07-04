@@ -30,5 +30,6 @@ Feign:
     enabled: true
 management:
   endpoints:
-    exposure:
-      include: "*"
+    web:
+      exposure:
+        include: "*"
