@@ -5,12 +5,13 @@ spring:
   cloud:
     config:
       server:
+        bootstrap: true
         git:
           uri: https://github.com/nicodanke/fudo-microservice.git
-          searchPath: config-data
+          searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
   security:
     user:
-      namme: root
+      name: root
       password: secret
