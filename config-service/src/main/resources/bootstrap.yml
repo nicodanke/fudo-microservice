@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: ruta al repo
+          uri: https://github.com/nicodanke/fudo-microservice.git
           searchPath: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
