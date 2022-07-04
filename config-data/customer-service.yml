@@ -5,7 +5,7 @@ server:
     include-message: always
 spring:
   application:
-    name: service-customers
+    name: customer-service
   datasource:
     url: jdbc:postgresql://localhost:5432/customers
     username: nddev

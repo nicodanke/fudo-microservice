@@ -5,7 +5,7 @@ server:
     include-message: always
 spring:
   application:
-    name: service-shopping
+    name: shopping-service
   datasource:
     url: jdbc:postgresql://localhost:5432/shopping
     username: nddev
