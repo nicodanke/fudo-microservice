@@ -10,6 +10,7 @@ import nd.dev.shoppingservice.model.Product;
 import nd.dev.shoppingservice.repository.InvoiceItemsRepository;
 import nd.dev.shoppingservice.repository.InvoiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
