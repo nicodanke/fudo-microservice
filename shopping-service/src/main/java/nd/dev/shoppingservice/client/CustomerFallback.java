@@ -2,7 +2,9 @@ package nd.dev.shoppingservice.client;
 
 import nd.dev.shoppingservice.model.Customer;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CustomerFallback implements CustomerClient{
 
     @Override
