@@ -28,8 +28,6 @@ eureka:
 feign:
   circuitbreaker:
     enabled: true
-    alphanumeric-ids:
-      enabled: true
 management:
   health:
     circuitbreakers:
