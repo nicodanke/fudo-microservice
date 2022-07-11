@@ -4,10 +4,8 @@ import nd.dev.shoppingservice.model.Customer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-@Component
-public class CustomerFallback implements CustomerClient{
+public class CustomerFallback{
 
-    @Override
     public ResponseEntity<Customer> getCustomer(long id) {
         Customer customer = Customer.builder()
                 .firstName("none")

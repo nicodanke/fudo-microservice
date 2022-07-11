@@ -41,13 +41,14 @@ management:
       show-details: always
 resilience4j:
   circuitbreaker:
-    configs:
-      default:
+    instances:
+      customersCB:
         registerHealthIndicator: true
         slidingWindowSize: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
         permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowType: COUNT_BASED
-        minimumNumberOfCalls: 4
+        minimumNumberOfCalls: 5
         waitDurationInOpenState: 5s
         failureRateThreshold: 50
         eventConsumerBufferSize: 10
